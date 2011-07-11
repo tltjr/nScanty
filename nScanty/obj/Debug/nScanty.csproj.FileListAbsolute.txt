@@ -1,0 +1,8 @@
+C:\src\dotnet\nScanty\nScanty\bin\nScanty.dll
+C:\src\dotnet\nScanty\nScanty\bin\nScanty.pdb
+C:\src\dotnet\nScanty\nScanty\bin\EntityFramework.dll
+C:\src\dotnet\nScanty\nScanty\bin\EntityFramework.xml
+C:\src\dotnet\nScanty\nScanty\obj\Debug\ResolveAssemblyReference.cache
+C:\src\dotnet\nScanty\nScanty\obj\Debug\nScanty.dll
+C:\src\dotnet\nScanty\nScanty\obj\Debug\nScanty.pdb
+C:\src\dotnet\nScanty\nScanty\bin\nunit.framework.dll

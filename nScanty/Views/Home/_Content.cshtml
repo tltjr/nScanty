@@ -1,0 +1,43 @@
+﻿@model IEnumerable<nScanty.Models.Post>
+
+<div id="content">
+    @if (Model.Count() == 0)
+    {
+		<h2><p>Looks like this is a fresh install of Scanty.</p><p><a href="/auth">Log in</a>, then <a href="/posts/new">create a post</a>.</p></h2>
+    }
+    else {
+        
+        foreach (var post in Model)
+        {
+        	<div class="post">
+        		<p class="date">@post.Month<b>@post.Day</b></p>
+
+                <h2 class="title"><a href="@post.Url">@post.Title</a></h2>
+        		<p class="meta"><small>
+                    @foreach (var tag in post.Tags) {
+                        <a href="/past/tags/@tag">@tag</a>
+        			@*<% if Blog.disqus_shortname %>
+                    this was being read out of main.rb OpenStruct, would be web.config for this app
+        				| <a href="<%= post.url %>#disqus_thread">comments</a>
+        			<% end %>*@
+                    }
+        		</small></p>
+        		<div class="entry">
+        			@post.Body
+        		</div>
+        	</div>
+        }
+    }
+
+	@*<% if posts.empty? %>
+		<h2><p>Looks like this is a fresh install of Scanty.</p><p><a href="/auth">Log in</a>, then <a href="/posts/new">create a post</a>.</p></h2>
+	<% else %>
+		<div id="older_posts">
+			<a href="/past">Archive</a>
+		</div>
+	<% end %>
+
+	<% if admin? %>
+		<div id="new_post"><a href="/posts/new"">New post</a></div>
+	<% end %>*@
+</div>
