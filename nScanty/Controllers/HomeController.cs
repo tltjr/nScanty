@@ -14,9 +14,30 @@ namespace nScanty.Controllers
         {
             List<Post> posts = GetPosts();
             ViewBag.Title = ConfigurationManager.AppSettings["title"];
-            return View(posts);
+            //return View(posts);
             // for testing fresh install
-            //return View(new List<Post>());
+            return View(new List<Post>());
+        }
+
+        //private bool IsAdmin()
+        //{
+        //    if (Request.Cookies != null && Request.Cookies["nscanty_admin"] != null)
+        //    {
+        //        return ConfigurationManager.AppSettings["nscanty_admin"] == Request.Cookies["nscanty_admin"].Value;
+        //    }
+        //    return false;
+        //}
+
+        [Authorize]
+        public ActionResult New()
+        {
+            return View();
+        }
+
+        public ActionResult Create(Post post)
+        {
+            // create post
+            return RedirectToAction("Post", new {slug = "blah"});
         }
 
         public ActionResult About()
@@ -24,12 +45,12 @@ namespace nScanty.Controllers
             return View();
         }
 
-        public ActionResult Post()
+        public ActionResult Post(string slug)
         {
             ViewBag.Title = ConfigurationManager.AppSettings["title"];
-            var slug = ControllerContext.RouteData.GetRequiredString("slug");
             var posts = GetPosts();
             var post = posts.Where(o => o.Slug == slug).FirstOrDefault();
+            // check is not null, handle appropriately
             return View(post);
         }
 
