@@ -34,8 +34,8 @@ namespace nScanty.Data
 
         public void Store(Post entity)
         {
-            var redisUrl = ConfigurationManager.AppSettings.Get("REDISTOGO_URL");
-			using (var redisClient = new RedisClient(redisUrl))
+            //var redisUrl = ConfigurationManager.AppSettings.Get("REDISTOGO_URL");
+			using (var redisClient = new RedisClient("redis://redistogo-appharbor:2e4f937e455cd3a4140e04ade7ccf284@catfish.redistogo.com/", 9477))
 			{
 			    var redis = redisClient.GetTypedClient<Post>();
                 var posts = redis.Lists["urn:posts"];
