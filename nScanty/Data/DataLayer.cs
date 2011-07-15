@@ -4,6 +4,7 @@ using System.Configuration;
 using System.IO;
 using System.Text;
 using MongoDB.Driver;
+using MongoDB.Driver.Builders;
 using nScanty.Models;
 
 namespace nScanty.Data
@@ -15,13 +16,15 @@ namespace nScanty.Data
         public DataLayer()
         {
             var connection = ConfigurationManager.AppSettings.Get("MONGOHQ_URL");
+            //const string connection = "mongodb://localhost/Posts";
             var database = MongoDatabase.Create(connection);
             _collection = database.GetCollection<Post>("Posts");
         }
 
         public Post GetById(string id)
         {
-            throw new NotImplementedException();
+            var query = Query.EQ("Slug", id);
+            return _collection.FindOne(query);
         }
 
         public IEnumerable<Post> GetAll()
