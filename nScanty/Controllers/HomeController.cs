@@ -11,15 +11,13 @@ namespace nScanty.Controllers
 {
     public class HomeController : Controller
     {
-        private DataLayer _dataLayer = new DataLayer();
+        private readonly DataLayer _dataLayer = new DataLayer();
 
         public ActionResult Index()
         {
-            List<Post> posts = GetPosts();
+            var posts = _dataLayer.GetAll();
             ViewBag.Title = ConfigurationManager.AppSettings["title"];
-            //return View(posts);
-            // for testing fresh install
-            return View(new List<Post>());
+            return View(posts);
         }
 
         //private bool IsAdmin()
@@ -48,6 +46,7 @@ namespace nScanty.Controllers
                                    post.Slug
                                };
             post.Url = @"/" + String.Join(@"/", segments) + @"/";
+            post.Tags = post.TagsRaw.Split(',');
             _dataLayer.Store(post);
             return RedirectToAction("Post", new {slug = post.Slug});
         }
@@ -62,9 +61,10 @@ namespace nScanty.Controllers
         public ActionResult Post(string slug)
         {
             ViewBag.Title = ConfigurationManager.AppSettings["title"];
-            var posts = GetPosts();
-            var post = posts.Where(o => o.Slug == slug).FirstOrDefault();
+            //var posts = GetPosts();
+            //var post = posts.Where(o => o.Slug == slug).FirstOrDefault();
             // check is not null, handle appropriately
+            var post = _dataLayer.GetById(slug);
             return View(post);
         }
 

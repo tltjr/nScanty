@@ -7,13 +7,6 @@ C:\src\dotnet\nScanty\nScanty\obj\Debug\nScanty.dll
 C:\src\dotnet\nScanty\nScanty\obj\Debug\nScanty.pdb
 C:\src\dotnet\nScanty\nScanty\bin\nunit.framework.dll
 C:\src\dotnet\nScanty\nScanty\bin\RouteDebug.dll
-C:\src\dotnet\nScanty\nScanty\bin\ServiceStack.Interfaces.dll
-C:\src\dotnet\nScanty\nScanty\bin\ServiceStack.Redis.dll
-C:\src\dotnet\nScanty\nScanty\bin\ServiceStack.Common.dll
-C:\src\dotnet\nScanty\nScanty\bin\ServiceStack.Text.dll
-C:\src\dotnet\nScanty\nScanty\bin\ServiceStack.Common.pdb
-C:\src\dotnet\nScanty\nScanty\bin\ServiceStack.Interfaces.pdb
-C:\src\dotnet\nScanty\nScanty\bin\ServiceStack.Redis.pdb
-C:\src\dotnet\nScanty\nScanty\bin\ServiceStack.Redis.xml
-C:\src\dotnet\nScanty\nScanty\bin\ServiceStack.Text.pdb
-C:\src\dotnet\nScanty\nScanty\bin\ServiceStack.Text.xml
+C:\src\dotnet\nScanty\nScanty\bin\Newtonsoft.Json.dll
+C:\src\dotnet\nScanty\nScanty\bin\Newtonsoft.Json.pdb
+C:\src\dotnet\nScanty\nScanty\bin\Newtonsoft.Json.xml

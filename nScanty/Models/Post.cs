@@ -33,6 +33,7 @@ namespace nScanty.Models
             }
         }
         public IEnumerable<string> Tags { get; set; }
+        public string TagsRaw { get; set; }
         public string Body { get; set; }
 
         public string Slug { get; set; }

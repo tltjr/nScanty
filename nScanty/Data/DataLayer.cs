@@ -1,56 +1,57 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Web;
+using System.IO;
+using System.Text;
+using Newtonsoft.Json;
 using nScanty.Models;
-using ServiceStack.Redis;
-using ServiceStack.Redis.Generic;
 
 namespace nScanty.Data
 {
     public class DataLayer : IBasicPersistenceProvider<Post>
     {
-        private bool _disposing;
-
-        public void Dispose()
-        {
-        }
+        private const string PostDir = "posts";
 
         public Post GetById(string id)
         {
-            throw new NotImplementedException();
+            string stringPost;
+            using (var reader = new StreamReader(Path.Combine(PostDir, id)))
+            {
+                stringPost = reader.ReadToEnd();
+            }
+            return String.IsNullOrEmpty(stringPost) ? null : JsonConvert.DeserializeObject<Post>(stringPost);
         }
 
-        public IList<Post> GetByIds(ICollection<string> ids)
+        public IEnumerable<Post> GetAll()
         {
-            throw new NotImplementedException();
-        }
-
-        public IList<Post> GetAll()
-        {
-            throw new NotImplementedException();
+            IList<Post> all = new List<Post>();
+            var di = new DirectoryInfo(PostDir);
+            if (!di.Exists) return all;
+            var posts = Directory.GetFiles(PostDir);
+            foreach (var post in posts)
+            {
+                using (var reader = new StreamReader(post))
+                {
+                    var stringPost = reader.ReadToEnd();
+                    if(!String.IsNullOrEmpty(stringPost))
+                    {
+                        all.Add(JsonConvert.DeserializeObject<Post>(stringPost));
+                    }
+                }
+            }
+            return all;
         }
 
         public void Store(Post entity)
         {
-            //var redisUrl = ConfigurationManager.AppSettings.Get("REDISTOGO_URL");
-			using (var redisClient = new RedisClient("redis://redistogo-appharbor:2e4f937e455cd3a4140e04ade7ccf284@catfish.redistogo.com", 9477))
-			{
-			    var redis = redisClient.GetTypedClient<Post>();
-                var posts = redis.Lists["urn:posts"];
-                posts.Add(entity);
-			}
-        }
-
-        public void StoreAll(IEnumerable<Post> entities)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Delete(Post entity)
-        {
-            throw new NotImplementedException();
+            var stringPost = JsonConvert.SerializeObject(entity);
+            var di = new DirectoryInfo(PostDir);
+            if (!di.Exists)
+            {
+                Directory.CreateDirectory(PostDir);
+            }
+            using(var writer = new StreamWriter(Path.Combine(PostDir, entity.Slug))){
+                writer.WriteLine(stringPost);
+            }
         }
 
         public void DeleteById(string id)
@@ -58,14 +59,6 @@ namespace nScanty.Data
             throw new NotImplementedException();
         }
 
-        public void DeleteByIds(ICollection<string> ids)
-        {
-            throw new NotImplementedException();
-        }
 
-        public void DeleteAll()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

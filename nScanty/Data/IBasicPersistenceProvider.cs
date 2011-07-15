@@ -5,24 +5,14 @@ using System.Text;
 
 namespace nScanty.Data
 {
-    public interface IBasicPersistenceProvider<T> : IDisposable
+    public interface IBasicPersistenceProvider<T>
     {
         T GetById(string id);
 
-        IList<T> GetByIds(ICollection<string> ids);
-
-        IList<T> GetAll();
+        IEnumerable<T> GetAll();
 
         void Store(T entity);
 
-        void StoreAll(IEnumerable<T> entities);
-
-        void Delete(T entity);
-
         void DeleteById(string id);
-
-        void DeleteByIds(ICollection<string> ids);
-
-        void DeleteAll();
     }
 }
