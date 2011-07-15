@@ -4,12 +4,15 @@ using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using nScanty.Data;
 using nScanty.Models;
 
 namespace nScanty.Controllers
 {
     public class HomeController : Controller
     {
+        private DataLayer _dataLayer = new DataLayer();
+
         public ActionResult Index()
         {
             List<Post> posts = GetPosts();
@@ -28,7 +31,6 @@ namespace nScanty.Controllers
         //    return false;
         //}
 
-        [Authorize]
         public ActionResult New()
         {
             return View();
@@ -37,7 +39,17 @@ namespace nScanty.Controllers
         public ActionResult Create(Post post)
         {
             // create post
-            return RedirectToAction("Post", new {slug = "blah"});
+            post.CreatedAt = DateTime.Now;
+            var segments = new List<string>
+                               {
+                                   post.CreatedAt.Year.ToString(),
+                                   post.Day.ToString(),
+                                   post.Month,
+                                   post.Slug
+                               };
+            post.Url = @"/" + String.Join(@"/", segments) + @"/";
+            _dataLayer.Store(post);
+            return RedirectToAction("Post", new {slug = post.Slug});
         }
 
         public ActionResult About()
@@ -66,8 +78,7 @@ namespace nScanty.Controllers
             var body = GetBody();
             var post = new Post()
                            {
-                               Day = 11,
-                               Month = "July",
+                                CreatedAt = DateTime.Now,
                                Title = "My First Post!",
                                Url = @"/past/2011/7/11/my_first_post/",
                                Tags = tags,
@@ -75,8 +86,7 @@ namespace nScanty.Controllers
                            };
             var post2 = new Post()
                             {
-                                Day = 11,
-                                Month = "July",
+                                CreatedAt = DateTime.Today,
                                 Title = "My Second Post!",
                                 Url = @"/past/2011/7/11/my_second_post/",
                                 Tags = tags,

@@ -7,3 +7,5 @@ C:\src\dotnet\nScanty\nScanty\obj\Debug\nScanty.dll
 C:\src\dotnet\nScanty\nScanty\obj\Debug\nScanty.pdb
 C:\src\dotnet\nScanty\nScanty\bin\nunit.framework.dll
 C:\src\dotnet\nScanty\nScanty\bin\RouteDebug.dll
+C:\src\dotnet\nScanty\nScanty\bin\ServiceStack.Interfaces.dll
+C:\src\dotnet\nScanty\nScanty\bin\ServiceStack.Redis.dll
