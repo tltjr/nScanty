@@ -15,19 +15,25 @@ namespace nScanty.Data
 
         public DataLayer()
         {
-            var connection = ConfigurationManager.AppSettings.Get("MONGOHQ_URL");
-            //const string connection = "mongodb://localhost/Posts";
+            //var connection = ConfigurationManager.AppSettings.Get("MONGOHQ_URL");
+            const string connection = "mongodb://localhost/Posts";
             var database = MongoDatabase.Create(connection);
             _collection = database.GetCollection<Post>("Posts");
         }
 
-        public Post GetById(string id)
+        public Post FindOneByKey(string key, string value)
         {
-            var query = Query.EQ("Slug", id);
+            var query = Query.EQ(key, value);
             return _collection.FindOne(query);
         }
 
-        public IEnumerable<Post> GetAll()
+        public IEnumerable<Post> FindAllByKey(string key, string value)
+        {
+            var query = Query.EQ(key, value);
+            return _collection.Find(query);
+        }
+
+        public IEnumerable<Post> FindAll()
         {
             return _collection.FindAll();
         }

@@ -15,7 +15,7 @@
                 <h2 class="title"><a href="@post.Url">@post.Title</a></h2>
         		<p class="meta"><small>
                     @foreach (var tag in post.Tags) {
-                        <a href="/past/tags/@tag">@tag</a>
+                        <a href="/tags/@tag">@tag</a>
         			@*<% if Blog.disqus_shortname %>
                     this was being read out of main.rb OpenStruct, would be web.config for this app
         				| <a href="<%= post.url %>#disqus_thread">comments</a>

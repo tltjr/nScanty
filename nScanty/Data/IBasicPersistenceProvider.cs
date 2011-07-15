@@ -7,9 +7,11 @@ namespace nScanty.Data
 {
     public interface IBasicPersistenceProvider<T>
     {
-        T GetById(string id);
+        T FindOneByKey(string key, string value);
 
-        IEnumerable<T> GetAll();
+        IEnumerable<T> FindAllByKey(string key, string value);
+
+        IEnumerable<T> FindAll();
 
         void Store(T entity);
 

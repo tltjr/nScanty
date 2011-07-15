@@ -38,8 +38,13 @@ namespace nScanty
 
             routes.MapRoute(
                 "Past",
-                "past/{year}/{month}/{day}/{slug}",
+                "{year}/{month}/{day}/{slug}",
                 new {controller = "Home", action = "Post", id = UrlParameter.Optional});
+
+            routes.MapRoute(
+                "Tag",
+                "tags/{tag}",
+                new {controller = "Home", action = "Tag", id = UrlParameter.Optional});
 
             routes.MapRoute(
                 "Default", // Route name
