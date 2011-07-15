@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Web;
+using MongoDB.Bson;
 
 namespace nScanty.Models
 {
     public class Post
     {
+        public ObjectId Id { get; set; }
         public DateTime CreatedAt { get; set; }
         public string Month
         {
