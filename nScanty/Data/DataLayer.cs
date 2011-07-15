@@ -4,7 +4,6 @@ using System.Configuration;
 using System.IO;
 using System.Text;
 using MongoDB.Driver;
-using Newtonsoft.Json;
 using nScanty.Models;
 
 namespace nScanty.Data

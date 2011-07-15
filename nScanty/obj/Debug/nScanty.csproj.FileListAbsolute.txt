@@ -7,6 +7,9 @@ C:\src\dotnet\nScanty\nScanty\obj\Debug\nScanty.dll
 C:\src\dotnet\nScanty\nScanty\obj\Debug\nScanty.pdb
 C:\src\dotnet\nScanty\nScanty\bin\nunit.framework.dll
 C:\src\dotnet\nScanty\nScanty\bin\RouteDebug.dll
-C:\src\dotnet\nScanty\nScanty\bin\Newtonsoft.Json.dll
-C:\src\dotnet\nScanty\nScanty\bin\Newtonsoft.Json.pdb
-C:\src\dotnet\nScanty\nScanty\bin\Newtonsoft.Json.xml
+C:\src\dotnet\nScanty\nScanty\bin\MongoDB.Bson.dll
+C:\src\dotnet\nScanty\nScanty\bin\MongoDB.Driver.dll
+C:\src\dotnet\nScanty\nScanty\bin\MongoDB.Bson.pdb
+C:\src\dotnet\nScanty\nScanty\bin\MongoDB.Bson.xml
+C:\src\dotnet\nScanty\nScanty\bin\MongoDB.Driver.pdb
+C:\src\dotnet\nScanty\nScanty\bin\MongoDB.Driver.xml
