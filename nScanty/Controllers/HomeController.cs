@@ -52,6 +52,8 @@ namespace nScanty.Controllers
             return RedirectToAction("Post", new {slug = post.Slug});
         }
 
+        // forcing a delta
+
         public ActionResult About()
         {
             return View();
