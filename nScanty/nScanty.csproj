@@ -88,6 +88,7 @@
     </Compile>
     <Compile Include="HashedPasswordGenerator.cs" />
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Index.cs" />
     <Compile Include="Models\Post.cs" />
     <Compile Include="Models\Tagged.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
