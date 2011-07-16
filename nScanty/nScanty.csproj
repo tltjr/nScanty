@@ -186,9 +186,6 @@
     <Content Include="Views\Home\Post.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\_Postzoom.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Home\_SinglePost.cshtml" />
   </ItemGroup>
   <ItemGroup>
