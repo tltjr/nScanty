@@ -1,16 +1,16 @@
-﻿@model nScanty.Models.Index
+﻿@model IEnumerable<nScanty.Models.Post>
 
 <div id="content">
-    @if (Model.IsAdmin) {
-        <div id="new_post"><a href="/posts/new">New Post</a></div>
+    @if (User.Identity.IsAuthenticated) {
+        <div id="new_post"><a href="/posts/new">New Post</a><p> </p><a href="/Account/LogOff">Log Off</a></div>
     }
-    @if (Model.Posts.Count() == 0)
+    @if (Model.Count() == 0)
     {
 		<h2><p>Looks like this is a fresh install of Scanty.</p><p><a href="/auth">Log in</a>, then <a href="/posts/new">create a post</a>.</p></h2>
     }
     else {
         
-        foreach (var post in Model.Posts)
+        foreach (var post in Model)
         {
         	<div class="post">
         		<p class="date">@post.Month<b>@post.Day</b></p>

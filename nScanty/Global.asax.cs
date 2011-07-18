@@ -26,10 +26,10 @@ namespace nScanty
             //    "auth/login",
             //    new {controller = "Home", action = "Login"});
 
-            //routes.MapRoute(
-            //    "Auth",
-            //    "auth",
-            //    new {controller = "Home", action = "Auth"});
+            routes.MapRoute(
+                "Auth",
+                "auth",
+                new { controller = "Account", action = "LogOn" });
 
             routes.MapRoute(
                 "New",

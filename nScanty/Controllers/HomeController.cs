@@ -16,20 +16,12 @@ namespace nScanty.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = ConfigurationManager.AppSettings["title"];
-            var indexViewModel = new Index {IsAdmin = IsAdmin(), Posts = _dataLayer.FindAll()};
-            return View(indexViewModel);
+            var posts = _dataLayer.FindAll();
+            var me = User.Identity;
+            return View(new List<Post>());
         }
 
-        private bool IsAdmin()
-        {
-            return true;
-            //if (Request.Cookies != null && Request.Cookies["nscanty_admin"] != null)
-            //{
-            //    return ConfigurationManager.AppSettings["nscanty_admin"] == Request.Cookies["nscanty_admin"].Value;
-            //}
-            //return false;
-        }
-
+        [Authorize]
         public ActionResult New()
         {
             return View();

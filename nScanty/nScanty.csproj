@@ -79,19 +79,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Data\MongoMembershipProvider.cs" />
-    <Compile Include="Bcrypt.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Data\Bcrypt.cs" />
     <Compile Include="Data\DataLayer.cs" />
     <Compile Include="Data\IBasicPersistenceProvider.cs" />
+    <Compile Include="Data\UserRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="HashedPasswordGenerator.cs" />
     <Compile Include="Models\AccountModels.cs" />
-    <Compile Include="Models\Index.cs" />
     <Compile Include="Models\Post.cs" />
     <Compile Include="Models\Tagged.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
