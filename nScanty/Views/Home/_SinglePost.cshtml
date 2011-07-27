@@ -1,21 +1,23 @@
 ﻿@model nScanty.Models.Post
            
-<div class="postzoom">
-	<h2 class="title">@Model.Title</h2>
-	<p class="meta"><small>
-                    @foreach (var tag in Model.Tags)
-                    {
-                        <a href="/tags/@tag">@tag</a>
-                    }
-        		</small></p>
-                        
-	            @*<p class="meta"><%= post.created_at %></p>*@
-        		<div class="entry">
-        			@Model.Body
-        		</div>
-	@*<% if admin? %>
-		<div class="edit"><a href="<%= post.url %>edit">edit</a></div>
-	<% end %>*@
+<div id="content">
+    <div class="postzoom">
+    	<h2 class="title">@Model.Title</h2>
+    	<p class="meta"><small>
+                        @foreach (var tag in Model.Tags)
+                        {
+                            <a href="/tags/@tag">@tag</a>
+                        }
+            		</small></p>
+                            
+    	            @*<p class="meta"><%= post.created_at %></p>*@
+            		<div class="entry">
+            			@Model.Body
+            		</div>
+    	@*<% if admin? %>
+    		<div class="edit"><a href="<%= post.url %>edit">edit</a></div>
+    	<% end %>*@
+    </div>
 </div>
 
 @*<% if Blog.disqus_shortname %>

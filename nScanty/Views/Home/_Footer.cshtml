@@ -1,7 +1,8 @@
-﻿<div id='footer'> 
+﻿@using System.Configuration
+<div id='footer'> 
   <p id='legal'> 
     Content by
-    John Doe
+    @ConfigurationManager.AppSettings["author"]
     Design adapted from
     <a href='http://www.freecsstemplates.org/preview/replenish'>Replenish</a> 
   </p> 

@@ -17,8 +17,7 @@ namespace nScanty.Controllers
         {
             ViewBag.Title = ConfigurationManager.AppSettings["title"];
             var posts = _dataLayer.FindAll();
-            var me = User.Identity;
-            return View(new List<Post>());
+            return View(posts);
         }
 
         [Authorize]
