@@ -1,0 +1,15 @@
+﻿@using nScanty.Models
+@model Post
+
+<h2>Edit Post</h2>
+
+@using (Html.BeginForm())
+{
+    <div>@Html.EditorFor(x => x.Title)</div>
+    <div>@Html.EditorFor(x => x.TagsRaw)</div>
+    <div>@Html.EditorFor(x => x.Body)</div>
+
+    <p align="center"> 
+        <input type="submit" value="Submit" /> 
+    </p> 
+}

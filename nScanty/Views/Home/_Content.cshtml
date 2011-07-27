@@ -2,7 +2,6 @@
 
 <div id="content">
     @if (User.Identity.IsAuthenticated) {
-        @*<div id="new_post"><a href="/posts/new">New Post</a><p> </p><a href="/Account/LogOff">Log Off</a></div>*@
         <div id="new_post">
             @Html.ActionLink("New Post", "New", "Home")
             @Html.ActionLink("Log Off", "LogOff", "Account")
@@ -23,16 +22,20 @@
         	<div class="post">
         		<p class="date">@post.Month<b>@post.Day</b></p>
 
-                <h2 class="title"><a href="@post.Url">@post.Title</a></h2>
-        		<p class="meta"><small>
-                    @foreach (var tag in post.Tags) {
-                        <a href="/tags/@tag">@tag</a>
-        			@*<% if Blog.disqus_shortname %>
-                    this was being read out of main.rb OpenStruct, would be web.config for this app
-        				| <a href="<%= post.url %>#disqus_thread">comments</a>
-        			<% end %>*@
-                    }
-        		</small></p>
+                <h2 class="title">
+                    <a href="@post.Url">@post.Title</a>
+                </h2>
+        		<p class="meta">
+                    <small>
+                        @foreach (var tag in post.Tags) {
+                            @Html.ActionLink(@tag, "Tag", "Home")
+                			@*<% if Blog.disqus_shortname %>
+                            this was being read out of main.rb OpenStruct, would be web.config for this app
+                				| <a href="<%= post.url %>#disqus_thread">comments</a>
+                			<% end %>*@
+                        }
+        		    </small>
+                </p>
         		<div class="entry">
         			@post.Body
         		</div>

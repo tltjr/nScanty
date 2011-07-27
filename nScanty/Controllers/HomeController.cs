@@ -58,5 +58,17 @@ namespace nScanty.Controllers
             return View(tagged);
         }
 
+        public ActionResult Edit(string slug)
+        {
+            var post = _dataLayer.FindOneByKey("slug", slug);
+            return View(post);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Post post)
+        {
+            // update db
+            return RedirectToAction("Index");
+        }
     }
 }
