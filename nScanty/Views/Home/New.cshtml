@@ -2,28 +2,30 @@
 
 <h2>New Post</h2>
 
-<form action="/Home/create" method=post>
+@*<form action="/Home/create" method=post>*@
+@using (Html.BeginForm())
+{
     <fieldset>
-        <div class="editor-label">
+        <div>
             @Html.LabelFor(model => model.Title)
         </div>
-        <div class="editor-field">
-            @Html.TextBoxFor(model => model.Title, new { size = 75 })
+        <div>
+            @Html.TextBoxFor(model => model.Title, new {size = 75})
         </div>
-        <div class="editor-label">
+        <div>
             <label>Tags (comma seperated)</label>
         </div>
-        <div class="editor-field">
-            @Html.TextBoxFor(model => model.TagsRaw, new { size = 75 })
+        <div>
+            @Html.TextBoxFor(model => model.TagsRaw, new {size = 75})
         </div>
-        <div class="editor-label">
+        <div>
             @Html.LabelFor(model => model.Body)
         </div>
-        <div class="entry">
-            @Html.TextAreaFor(model => model.Body, new { rows = 20, cols = 100 })
+        <div>
+            @Html.TextAreaFor(model => model.Body, new {rows = 20, cols = 100})
         </div>
         <p>
-	        <input type="submit" value="Save" />
+            <input type="submit" value="Save" />
         </p>
     </fieldset>
-</form>
+}

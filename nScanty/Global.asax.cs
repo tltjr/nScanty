@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using nScanty.Data;
 
 namespace nScanty
 {
@@ -26,15 +28,15 @@ namespace nScanty
             //    "auth/login",
             //    new {controller = "Home", action = "Login"});
 
-            routes.MapRoute(
-                "Auth",
-                "auth",
-                new { controller = "Account", action = "LogOn" });
+            //routes.MapRoute(
+            //    "Auth",
+            //    "auth",
+            //    new { controller = "Account", action = "LogOn" });
 
-            routes.MapRoute(
-                "New",
-                "posts/new",
-                new {controller = "Home", action = "New"});
+            //routes.MapRoute(
+            //    "New",
+            //    "posts/new",
+            //    new {controller = "Home", action = "New"});
 
             routes.MapRoute(
                 "Past",
@@ -60,7 +62,18 @@ namespace nScanty
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+            RegisterUser();
             //RouteDebug.RouteDebugger.RewriteRoutesForTesting(RouteTable.Routes);
+        }
+
+        private static void RegisterUser()
+        {
+            var repo = new UserRepository();
+            var username = ConfigurationManager.AppSettings["user"];
+            var user = repo.GetUser(username);
+            if (null != user) return;
+            var password = ConfigurationManager.AppSettings["password"];
+            repo.CreateUser(username, password, "");
         }
     }
 }

@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Security.Cryptography;
 using System.Web.Security;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.Builders;
 
-namespace MongoMvcApplication.Data
+namespace nScanty.Data
 {
     public class UserRepository
     {

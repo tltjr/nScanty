@@ -2,7 +2,7 @@
 using System.Collections.Specialized;
 using System.Web.Hosting;
 using System.Web.Security;
-using MongoMvcApplication.Data;
+using nScanty.Data;
 
 public class MongoMembershipProvider : MembershipProvider
 {

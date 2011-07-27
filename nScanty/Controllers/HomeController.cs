@@ -27,9 +27,9 @@ namespace nScanty.Controllers
             return View();
         }
 
-        public ActionResult Create(Post post)
+        [HttpPost]
+        public ActionResult New(Post post)
         {
-            // create post
             post.CreatedAt = DateTime.Now;
             var segments = new List<string>
                                {
