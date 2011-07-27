@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Web;
@@ -36,6 +37,7 @@ namespace nScanty.Models
         }
         public IEnumerable<string> Tags { get; set; }
         public string TagsRaw { get; set; }
+        [DataType(DataType.MultilineText)]
         public string Body { get; set; }
 
         public string Slug { get; set; }

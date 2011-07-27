@@ -214,6 +214,8 @@ hr {
 	right: 0;
 }
 
+.multi-line { height:30em; width:50em; }
+
 /* Footer */
 
 #footer {
