@@ -37,8 +37,22 @@ namespace nScanty.Models
         }
         public IEnumerable<string> Tags { get; set; }
         public string TagsRaw { get; set; }
+        private string _body;
+
         [DataType(DataType.MultilineText)]
-        public string Body { get; set; }
+        public string Body
+        {
+            get { return _body; } 
+            set
+            {
+                _body = value;
+                More = _body.Length >= 200;
+                Summary = More ? _body.Substring(0, 200) : _body;
+            }
+        }
+
+        public string Summary { get; set; }
+        public bool More { get; set; }
 
         public string Slug { get; set; }
                 

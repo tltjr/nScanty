@@ -41,7 +41,10 @@
         		    </small>
                 </p>
         		<div class="entry">
-        			@post.Body
+                    @post.Summary
+                    @if (post.More) {
+                        <a href="@post.Url">Continue reading..</a>
+                    }
         		</div>
         	</div>
         }
