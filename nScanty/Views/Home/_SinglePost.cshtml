@@ -5,13 +5,17 @@
     	<h2 class="title">@Model.Title</h2>
     	<p class="meta">
             <small>
-                @foreach (var tag in Model.Tags) {
-                    <a href="/tags/@tag">@tag</a>
-                    
-        			@*<% if Blog.disqus_shortname %>
-                    this was being read out of main.rb OpenStruct, would be web.config for this app
-        				| <a href="<%= post.url %>#disqus_thread">comments</a>
-        			<% end %>*@
+                @if (Model.Tags != null)
+                {
+                     foreach (var tag in Model.Tags)
+                     {
+                         <a href="/tags/@tag">@tag</a>
+
+                        @*<% if Blog.disqus_shortname %>
+                        this was being read out of main.rb OpenStruct, would be web.config for this app
+            				| <a href="<%= post.url %>#disqus_thread">comments</a>
+            			<% end %>*@
+                    }
                 }
              </small>
          </p>
@@ -22,7 +26,7 @@
         @if (User.Identity.IsAuthenticated)
         {
             <div class="edit">
-                @Html.ActionLink("Edit", "Edit", "Home", new { slug = @Model.Slug })
+                @Html.ActionLink("Edit", "Edit", "Home", new { objectId = Model.Id}, null)
             </div>
         }
     </div>

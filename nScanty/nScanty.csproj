@@ -82,7 +82,8 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Data\Bcrypt.cs" />
-    <Compile Include="Data\DataLayer.cs" />
+    <Compile Include="Data\EditId.cs" />
+    <Compile Include="Data\PostRepository.cs" />
     <Compile Include="Data\IBasicPersistenceProvider.cs" />
     <Compile Include="Data\UserRepository.cs" />
     <Compile Include="Global.asax.cs">

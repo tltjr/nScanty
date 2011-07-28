@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using MongoDB.Bson;
+using MongoDB.Driver;
 
 namespace nScanty.Data
 {
@@ -15,6 +17,8 @@ namespace nScanty.Data
 
         void Store(T entity);
 
-        void DeleteById(string id);
+        void Update(T entity);
+
+        void DeleteById(ObjectId id);
     }
 }

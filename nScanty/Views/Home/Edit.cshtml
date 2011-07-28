@@ -10,4 +10,6 @@
     <div>@Html.EditorFor(x => x.Body)</div>
 
     <input type="submit" value="Submit" /> 
+    var id = Model.Id;
+    @Html.ActionLink("Delete", "Delete", "Home", new {id}, null);
 }

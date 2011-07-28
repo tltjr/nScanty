@@ -1,0 +1,323 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Models/f:AccountModels.cs" caret="0" fromTop="0" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Properties/f:AssemblyInfo.cs" caret="1352" fromTop="33" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Header.cshtml" caret="93" fromTop="4" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Controllers/f:AccountController.cs" caret="696" fromTop="22" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/f:Web.config" caret="0" fromTop="0" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/f:HashedPasswordGenerator.cs" caret="0" fromTop="0" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/f:Global.asax.cs" caret="2413" fromTop="49" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Shared/f:_Layout.cshtml" caret="79" fromTop="4" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="770" fromTop="25" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_SinglePost.cshtml" caret="857" fromTop="24" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_PostsTagged.cshtml" caret="461" fromTop="14" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Data/f:PostRepository.cs" caret="954" fromTop="29" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Data/f:IBasicPersistenceProvider.cs" caret="439" fromTop="19" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:Post.cshtml" caret="32" fromTop="2" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:Edit.cshtml" caret="87" fromTop="6" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Content/f:main.css" caret="3046" fromTop="36" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Models/f:Post.cs" caret="1103" fromTop="39" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:New.cshtml" caret="725" fromTop="27" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:Index.cshtml" caret="0" fromTop="0" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/f:Web.config" caret="875" fromTop="19" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Footer.cshtml" caret="155" fromTop="5" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:App_Data/f:MongoMembershipProvider.cs" caret="0" fromTop="0" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Data/f:UserRepository.cs" caret="3593" fromTop="43" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:Auth.cshtml" caret="0" fromTop="0" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Controllers/f:HomeController.cs" caret="2143" fromTop="33" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="1297" fromTop="29" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="114" fromTop="4" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Models/f:Post.cs" caret="1104" fromTop="39" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:Edit.cshtml" caret="235" fromTop="11" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Content/f:main.css" caret="3046" fromTop="36" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="1297" fromTop="35" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="1297" fromTop="41" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="1297" fromTop="35" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="1297" fromTop="36" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="1297" fromTop="7" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="1297" fromTop="11" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_SinglePost.cshtml" caret="557" fromTop="8" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_SinglePost.cshtml" caret="557" fromTop="19" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_SinglePost.cshtml" caret="191" fromTop="7" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="876" fromTop="6" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="1311" fromTop="14" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_SinglePost.cshtml" caret="217" fromTop="7" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Data/f:PostRepository.cs" caret="1654" fromTop="52" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Data/f:PostRepository.cs" caret="267" fromTop="6" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Data/f:PostRepository.cs" caret="1595" fromTop="37" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Controllers/f:HomeController.cs" caret="2269" fromTop="44" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Data/f:PostRepository.cs" caret="1509" fromTop="33" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Controllers/f:HomeController.cs" caret="2487" fromTop="51" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Data/f:IBasicPersistenceProvider.cs" caret="440" fromTop="19" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:Edit.cshtml" caret="27" fromTop="1" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:Edit.cshtml" caret="280" fromTop="12" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Data/f:PostRepository.cs" caret="849" fromTop="26" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Data/f:PostRepository.cs" caret="1055" fromTop="33" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_SinglePost.cshtml" caret="877" fromTop="24" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Controllers/f:HomeController.cs" caret="2097" fromTop="32" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.10\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="public" priority="6" />
+      <Item value="string" priority="7" />
+      <Item value="var" priority="23" />
+      <Item value="new" priority="12" />
+      <Item value="HttpPostAttribute`0" priority="0" />
+      <Item value="Day" priority="0" />
+      <Item value="Month" priority="0" />
+      <Item value="Title" priority="0" />
+      <Item value="Url" priority="0" />
+      <Item value="posts" priority="2" />
+      <Item value="List" priority="2" />
+      <Item value="post" priority="4" />
+      <Item value="IEnumerable" priority="1" />
+      <Item value="tags" priority="0" />
+      <Item value="body" priority="0" />
+      <Item value="Post`0" priority="2" />
+      <Item value="void" priority="0" />
+      <Item value="BCrypt`0" priority="1" />
+      <Item value="desiredPassword" priority="0" />
+      <Item value="ViewBag" priority="0" />
+      <Item value="HttpPostedFile`0" priority="0" />
+      <Item value="private" priority="3" />
+      <Item value="bool" priority="0" />
+      <Item value="redisUrl" priority="5" />
+      <Item value="entity" priority="5" />
+      <Item value="DataLayer" priority="0" />
+      <Item value="_dataLayer" priority="2" />
+      <Item value="host" priority="0" />
+      <Item value="sb" priority="2" />
+      <Item value="File`0" priority="0" />
+      <Item value="writer" priority="0" />
+      <Item value="stringPost" priority="4" />
+      <Item value="StreamReader`0" priority="0" />
+      <Item value="reader" priority="0" />
+      <Item value="JsonConvert`0" priority="1" />
+      <Item value="if" priority="2" />
+      <Item value="String`0" priority="0" />
+      <Item value="return" priority="2" />
+      <Item value="null" priority="3" />
+      <Item value="const" priority="0" />
+      <Item value="Directory`0" priority="2" />
+      <Item value="foreach" priority="0" />
+      <Item value="yield return" priority="0" />
+      <Item value="DirectoryInfo`0" priority="0" />
+      <Item value="PostDir" priority="1" />
+      <Item value="di" priority="0" />
+      <Item value="IList" priority="0" />
+      <Item value="List&lt;Post&gt;" priority="0" />
+      <Item value="all" priority="0" />
+      <Item value="Object`0" priority="0" />
+      <Item value="connection" priority="0" />
+      <Item value="database" priority="0" />
+      <Item value="PositiveTimeSpanValidator`0" priority="0" />
+      <Item value="coll" priority="0" />
+      <Item value="DataLayer`0" priority="0" />
+      <Item value="_collection" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@BCrypt">
+      <Item value="HashPassword`0" priority="0" />
+      <Item value="GenerateSalt`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Configuration.ConfigurationManager">
+      <Item value="AppSettings" priority="83" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:nScanty.Models.Post">
+      <Item value="Slug" priority="29" />
+      <Item value="CreatedAt" priority="0" />
+      <Item value="Day" priority="0" />
+      <Item value="Month" priority="0" />
+      <Item value="Tags" priority="109" />
+      <Item value="TagsRaw" priority="0" />
+      <Item value="Title" priority="53" />
+      <Item value="Body" priority="27" />
+      <Item value="Id" priority="188" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ServiceStack.Redis.Generic.IRedisList`1">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:nScanty.Data.DataLayer">
+      <Item value="Store`0" priority="0" />
+      <Item value="GetById`0" priority="0" />
+      <Item value="GetAll`0" priority="0" />
+      <Item value="FindOneByKey`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Substring`0" priority="1" />
+      <Item value="Length" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Newtonsoft.Json.JsonConvert">
+      <Item value="SerializeObject`0" priority="0" />
+      <Item value="DeserializeObject`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="Append`0" priority="1" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="Year" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StreamWriter">
+      <Item value="WriteLine`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StreamReader">
+      <Item value="ReadToEnd`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="IsNullOrEmpty`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Path">
+      <Item value="Combine`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Directory">
+      <Item value="GetFiles`0" priority="0" />
+      <Item value="CreateDirectory`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.DirectoryInfo">
+      <Item value="Exists" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Specialized.NameValueCollection">
+      <Item value="Get`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@MongoDB.Driver.MongoDatabase">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MongoDB.Driver.MongoDatabase">
+      <Item value="GetCollection`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MongoDB.Driver.MongoCollection`1">
+      <Item value="Insert`0" priority="0" />
+      <Item value="FindAll`0" priority="0" />
+      <Item value="Update`0" priority="26" />
+      <Item value="Remove`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="RazorTransitionCompletionContext">
+      <Item value="Html" priority="87" />
+      <Item value="using" priority="17" />
+    </ItemStatistics>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="Html" priority="393" />
+      <Item value="using" priority="59" />
+      <Item value="Account" priority="65" />
+      <Item value="div" priority="59" />
+      <Item value="Home" priority="65" />
+      <Item value="h2" priority="29" />
+      <Item value="var" priority="223" />
+      <Item value="new" priority="319" />
+      <Item value="repo" priority="95" />
+      <Item value="if" priority="159" />
+      <Item value="null" priority="159" />
+      <Item value="ConfigurationManager`0" priority="31" />
+      <Item value="username" priority="31" />
+      <Item value="password" priority="31" />
+      <Item value="ActionLink`0" priority="7" />
+      <Item value="Tag" priority="32" />
+      <Item value="RouteValueDictionary" priority="57" />
+      <Item value="tag" priority="31" />
+      <Item value="post" priority="191" />
+      <Item value="return" priority="127" />
+      <Item value="View`0" priority="31" />
+      <Item value="About.cshtml" priority="18" />
+      <Item value="EditorFor`2" priority="7" />
+      <Item value="Model" priority="223" />
+      <Item value="public" priority="63" />
+      <Item value="ActionResult`0" priority="31" />
+      <Item value="Post`0" priority="95" />
+      <Item value="string" priority="220" />
+      <Item value="_dataLayer" priority="31" />
+      <Item value="RedirectToAction`0" priority="63" />
+      <Item value="Index" priority="65" />
+      <Item value="int" priority="31" />
+      <Item value="i" priority="95" />
+      <Item value="else" priority="31" />
+      <Item value="void" priority="63" />
+      <Item value="Query`0" priority="31" />
+      <Item value="KeyNotFoundException`0" priority="31" />
+      <Item value="queryKey" priority="31" />
+      <Item value="queryValue" priority="31" />
+      <Item value="UpdateDocument" priority="28" />
+      <Item value="BsonDocument" priority="29" />
+      <Item value="updateKey" priority="31" />
+      <Item value="updateValue" priority="31" />
+      <Item value="query" priority="31" />
+      <Item value="update" priority="31" />
+      <Item value="_collection" priority="31" />
+      <Item value="_postRepository" priority="63" />
+      <Item value="DeleteById`0" priority="31" />
+      <Item value="Store`0" priority="31" />
+      <Item value="updated" priority="31" />
+      <Item value="SafeMode`0" priority="31" />
+      <Item value="safeModeResult" priority="31" />
+      <Item value="Object`0" priority="31" />
+      <Item value="T`0" priority="31" />
+      <Item value="XPathBinder`0" priority="31" />
+      <Item value="x" priority="63" />
+      <Item value="key" priority="31" />
+      <Item value="objectId" priority="31" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.HtmlHelper`1">
+      <Item value="BeginForm`0" priority="53" />
+      <Item value="ActionLink`0" priority="215" />
+      <Item value="EditorFor`2" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="HtmlCodeCompletionContext">
+      <Item value="p" priority="13" />
+      <Item value="div" priority="21" />
+      <Item value="h2" priority="7" />
+      <Item value="id" priority="5" />
+      <Item value="content" priority="5" />
+      <Item value="a" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:nScanty.Data.UserRepository">
+      <Item value="GetUser`0" priority="26" />
+      <Item value="CreateUser`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="CssCodeCompletionContext">
+      <Item value="margin" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Count`1" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@MongoDB.Driver.Builders.Query">
+      <Item value="EQ`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:nScanty.Data.PostRepository">
+      <Item value="Update`0" priority="26" />
+      <Item value="DeleteById`0" priority="26" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
