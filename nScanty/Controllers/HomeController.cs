@@ -28,6 +28,7 @@ namespace nScanty.Controllers
         }
 
         [HttpPost]
+        [ValidateInput(false)]
         public ActionResult New(Post post)
         {
             post.CreatedAt = DateTime.Now;
@@ -67,6 +68,7 @@ namespace nScanty.Controllers
         }
 
         [HttpPost]
+        [ValidateInput(false)]
         public ActionResult Edit(Post post)
         {
             post.CreatedAt = DateTime.Now;

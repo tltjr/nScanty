@@ -41,9 +41,13 @@
         		    </small>
                 </p>
         		<div class="entry">
-                    @post.Summary
-                    @if (post.More) {
-                        <a href="@post.Url">Continue reading..</a>
+                    @{
+                        var summary = @post.Summary;
+                        var sumHtml = summary.Replace("\r\n", "<br />");
+                        @Html.Raw(sumHtml)
+                        if (post.More) {
+                            <a href="@post.Url">Continue reading..</a>
+                        }
                     }
         		</div>
         	</div>

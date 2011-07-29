@@ -16,24 +16,24 @@
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/f:Web.config" caret="0" fromTop="0" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/f:HashedPasswordGenerator.cs" caret="0" fromTop="0" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/f:Global.asax.cs" caret="2413" fromTop="49" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Shared/f:_Layout.cshtml" caret="79" fromTop="4" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="770" fromTop="25" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_SinglePost.cshtml" caret="857" fromTop="24" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_PostsTagged.cshtml" caret="461" fromTop="14" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Data/f:PostRepository.cs" caret="954" fromTop="29" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Data/f:IBasicPersistenceProvider.cs" caret="439" fromTop="19" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:Post.cshtml" caret="32" fromTop="2" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:Edit.cshtml" caret="87" fromTop="6" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Content/f:main.css" caret="3046" fromTop="36" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Models/f:Post.cs" caret="1103" fromTop="39" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:New.cshtml" caret="725" fromTop="27" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:Index.cshtml" caret="0" fromTop="0" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/f:Web.config" caret="875" fromTop="19" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Footer.cshtml" caret="155" fromTop="5" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:App_Data/f:MongoMembershipProvider.cs" caret="0" fromTop="0" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Data/f:UserRepository.cs" caret="3593" fromTop="43" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Data/f:PostRepository.cs" caret="954" fromTop="29" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Controllers/f:HomeController.cs" caret="2135" fromTop="33" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_PostsTagged.cshtml" caret="461" fromTop="14" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_SinglePost.cshtml" caret="857" fromTop="24" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="770" fromTop="25" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Shared/f:_Layout.cshtml" caret="79" fromTop="4" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:Post.cshtml" caret="32" fromTop="2" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:Edit.cshtml" caret="87" fromTop="6" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:New.cshtml" caret="725" fromTop="27" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:Index.cshtml" caret="0" fromTop="0" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Footer.cshtml" caret="155" fromTop="5" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:Auth.cshtml" caret="0" fromTop="0" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Controllers/f:HomeController.cs" caret="2143" fromTop="33" />
     </RecentFiles>
     <RecentEdits>
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="1297" fromTop="29" />

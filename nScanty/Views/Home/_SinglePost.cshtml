@@ -21,7 +21,11 @@
          </p>
         @*<p class="meta"><%= post.created_at %></p>*@
 		<div class="entry">
-			@Model.Body
+            @{
+                var body = Model.Body;
+                var bodyHtml = body.Replace("\r\n", "<br />");
+                @Html.Raw(bodyHtml)
+            }
 		</div>
         @if (User.Identity.IsAuthenticated)
         {
