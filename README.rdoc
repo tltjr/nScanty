@@ -26,6 +26,6 @@ Once signed in, a "New Post" link appears in the upper right hand corner. Clicki
 
 == Help
 
-Feel free to email me with any questions: thomas.thornton.jr@gmail.com
+Feel free to add an issue if you encounter a specific problem/bug.
 
 Stay tuned for updates, hopefully I'll have a more production worthy version available soon.
