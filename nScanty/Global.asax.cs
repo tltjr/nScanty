@@ -23,21 +23,6 @@ namespace nScanty
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            //routes.MapRoute(
-            //    "Login",
-            //    "auth/login",
-            //    new {controller = "Home", action = "Login"});
-
-            //routes.MapRoute(
-            //    "Auth",
-            //    "auth",
-            //    new { controller = "Account", action = "LogOn" });
-
-            //routes.MapRoute(
-            //    "New",
-            //    "posts/new",
-            //    new {controller = "Home", action = "New"});
-
             routes.MapRoute(
                 "Past",
                 "{year}/{month}/{day}/{slug}",
