@@ -10,24 +10,6 @@ namespace nScanty.Models
 {
     public class Post
     {
-        private static readonly Dictionary<int, string> Months = new Dictionary<int, string>();
-
-        public Post()
-        {
-            Months.Add(1, "JAN");
-            Months.Add(2, "FEB");
-            Months.Add(3, "MAR");
-            Months.Add(4, "APR");
-            Months.Add(5, "MAY");
-            Months.Add(6, "JUN");
-            Months.Add(7, "JUL");
-            Months.Add(8, "AUG");
-            Months.Add(9, "SEP");
-            Months.Add(10, "OCT");
-            Months.Add(11, "NOV");
-            Months.Add(12, "DEC");
-        }
-
         public ObjectId Id { get; set; }
         public DateTime CreatedAt { get; set; }
         public string Month
@@ -76,7 +58,33 @@ namespace nScanty.Models
                 
         private static string ConvertMonthToString(int month)
         {
-            return Months[month];
+            switch (month)
+            {
+                case 1:
+                    return "JAN";
+                case 2:
+                    return "FEB";
+                case 3:
+                    return "MAR";
+                case 4:
+                    return "APR";
+                case 5:
+                    return "MAY";
+                case 6:
+                    return "JUN";
+                case 7:
+                    return "JUL";
+                case 8:
+                    return "AUG";
+                case 9:
+                    return "SEP";
+                case 10:
+                    return "OCT";
+                case 11:
+                    return "NOV";
+                default:
+                    return "DEC";
+            } 
         }
     }
 }
