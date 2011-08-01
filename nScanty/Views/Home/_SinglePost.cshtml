@@ -3,23 +3,11 @@
 <div id="content">
     <div class="postzoom">
     	<h2 class="title">@Model.Title</h2>
-    	<p class="meta">
-            <small>
-                @if (Model.Tags != null)
-                {
-                     foreach (var tag in Model.Tags)
-                     {
-                        @Html.ActionLink(tag, "Tag", new { tag = tag });
 
-                        @*<% if Blog.disqus_shortname %>
-                        this was being read out of main.rb OpenStruct, would be web.config for this app
-            				| <a href="<%= post.url %>#disqus_thread">comments</a>
-            			<% end %>*@
-                    }
-                }
-             </small>
-         </p>
-        @*<p class="meta"><%= post.created_at %></p>*@
+        @Html.Partial("_Tags", Model.Tags)
+
+        <p class="meta">@Model.CreatedAt</p>
+
 		<div class="entry">
             @{
                 var body = Model.Body;
@@ -27,12 +15,14 @@
                 @Html.Raw(bodyHtml)
             }
 		</div>
+
         @if (User.Identity.IsAuthenticated)
         {
             <div class="edit">
                 @Html.ActionLink("Edit", "Edit", new { objectId = Model.Id}, null)
             </div>
         }
+        
     </div>
 </div>
 

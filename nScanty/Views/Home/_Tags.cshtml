@@ -1,0 +1,17 @@
+﻿@model IEnumerable<string>
+
+<p class="meta">
+    <small>
+        @if (Model != null)
+        {
+            foreach (var tag in Model) {
+                @Html.ActionLink(tag, "Tag", new {tag})
+                                            
+    			@*<% if Blog.disqus_shortname %>
+                this was being read out of main.rb OpenStruct, would be web.config for this app
+    				| <a href="<%= post.url %>#disqus_thread">comments</a>
+    			<% end %>*@
+            }
+        }
+    </small>
+</p>

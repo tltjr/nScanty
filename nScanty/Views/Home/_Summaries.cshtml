@@ -1,0 +1,28 @@
+﻿@model IEnumerable<nScanty.Models.Post>
+
+@foreach (var post in Model)
+{
+	<div class="post">
+		<p class="date">@post.Month<b>@post.Day</b></p>
+
+        <h2 class="title">
+            @Html.ActionLink(@post.Title, "Post", new { slug = @post.Slug }, null)
+        </h2>
+
+        @Html.Partial("_Tags", post.Tags)
+
+		<div class="entry">
+            @{
+                var summary = @post.Summary;
+                var sumHtml = summary.Replace("\r\n", "<br />");
+                sumHtml += "  ";
+                @Html.Raw(sumHtml)
+                if (post.More)
+                {
+                    @Html.ActionLink("Continue reading..", "Post", new { slug = @post.Slug }, null)
+                }
+            }
+		</div>
+
+	</div>
+}
