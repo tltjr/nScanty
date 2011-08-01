@@ -1,0 +1,10 @@
+﻿@model IEnumerable<nScanty.Models.Post>
+<table class="archive">
+@foreach (var post in Model)
+{
+    <tr>
+        <td class="date">@post.CreatedAt</td>
+        <td class="title">@Html.ActionLink(@post.Title, "Post", new { slug = @post.Slug }, null)</td>
+    </tr>
+}
+</table>

@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.ServiceModel.Syndication;
 using System.Web;
 using System.Web.Mvc;
 using MongoDB.Bson;
 using nScanty.Data;
+using nScanty.Feed;
 using nScanty.Models;
 
 namespace nScanty.Controllers
@@ -13,12 +15,14 @@ namespace nScanty.Controllers
     public class HomeController : Controller
     {
         private readonly PostRepository _postRepository = new PostRepository();
+        private readonly RssHelper _rssHelper = new RssHelper();
 
         public ActionResult Index()
         {
             ViewBag.Title = ConfigurationManager.AppSettings["title"];
-            var posts = _postRepository.FindAll();
-            return View(posts);
+            var posts = _postRepository.FindAll().ToList();
+            posts.Sort((x, y) => y.CreatedAt.CompareTo(x.CreatedAt));
+            return View(posts.Take(10));
         }
 
         [Authorize]
@@ -80,6 +84,26 @@ namespace nScanty.Controllers
         {
             _postRepository.DeleteById(new ObjectId(id));
             return RedirectToAction("Index");
+        }
+
+        public ActionResult Archive()
+        {
+            var posts = _postRepository.FindAll().ToList();
+            posts.Sort((x, y) => y.CreatedAt.CompareTo(x.CreatedAt));
+            return View(posts);
+        }
+
+        public ActionResult Rss()
+        {
+            var posts = _postRepository.FindAll().ToList();
+            posts.Sort((x, y) => y.CreatedAt.CompareTo(x.CreatedAt));
+            var twenty = posts.Take(20);
+            var title = ConfigurationManager.AppSettings["title"];
+            var description = ConfigurationManager.AppSettings["description"];
+            var uri = new Uri(ConfigurationManager.AppSettings["feeduri"]);
+            var feed = new SyndicationFeed(title, description, uri,
+                _rssHelper.CreateSyndicationItems(twenty, uri));
+            return new RssActionResult { Feed = feed };
         }
     }
 }

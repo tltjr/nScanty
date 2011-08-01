@@ -22,6 +22,8 @@ namespace nScanty.Models
             get { return CreatedAt.Day; }
         }
 
+        public string Url { get; set; }
+
         private string _title;
         public string Title
         {
@@ -32,6 +34,7 @@ namespace nScanty.Models
                 var lower = Title.ToLower();
                 var spacesParsed = Regex.Replace(lower, @" ", "_");
                 Slug = Regex.Replace(spacesParsed, @"[^a-z0-9_]", String.Empty);
+                Url = CreatedAt.Year + "/" + CreatedAt.Month + "/" + Slug + "/";
             }
         }
         public IEnumerable<string> Tags { get; set; }

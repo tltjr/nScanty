@@ -24,6 +24,16 @@ namespace nScanty
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                "RSS",
+                "rss",
+                new {controller = "Home", action = "Rss"});
+
+            routes.MapRoute(
+                "Post",
+                "{year}/{month}/{slug}",
+                new {controller = "Home", action = "Post" });
+
+            routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
@@ -38,7 +48,7 @@ namespace nScanty
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
             RegisterUser();
-            //RouteDebug.RouteDebugger.RewriteRoutesForTesting(RouteTable.Routes);
+            RouteDebug.RouteDebugger.RewriteRoutesForTesting(RouteTable.Routes);
         }
 
         private static void RegisterUser()
