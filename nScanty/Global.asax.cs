@@ -24,16 +24,6 @@ namespace nScanty
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                "Past",
-                "{year}/{month}/{day}/{slug}",
-                new {controller = "Home", action = "Post", id = UrlParameter.Optional});
-
-            routes.MapRoute(
-                "Tag",
-                "tags/{tag}",
-                new {controller = "Home", action = "Tag", id = UrlParameter.Optional});
-
-            routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults

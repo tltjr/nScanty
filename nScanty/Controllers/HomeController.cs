@@ -32,16 +32,11 @@ namespace nScanty.Controllers
         public ActionResult New(Post post)
         {
             post.CreatedAt = DateTime.Now;
-            var segments = new List<string>
-                               {
-                                   post.CreatedAt.Year.ToString(),
-                                   post.Day.ToString(),
-                                   post.Month,
-                                   post.Slug
-                               };
-            post.Url = @"/" + String.Join(@"/", segments) + @"/";
-            var split = post.TagsRaw.Split(',');
-            post.Tags = split.Select(o => o.Trim()).ToList();
+            if (post.TagsRaw != null)
+            {
+                var split = post.TagsRaw.Split(',');
+                post.Tags = split.Select(o => o.Trim()).ToList();
+            }
             _postRepository.Store(post);
             return RedirectToAction("Post", new {slug = post.Slug});
         }
@@ -72,16 +67,11 @@ namespace nScanty.Controllers
         public ActionResult Edit(Post post)
         {
             post.CreatedAt = DateTime.Now;
-            var segments = new List<string>
-                               {
-                                   post.CreatedAt.Year.ToString(),
-                                   post.Day.ToString(),
-                                   post.Month,
-                                   post.Slug
-                               };
-            post.Url = @"/" + String.Join(@"/", segments) + @"/";
-            var split = post.TagsRaw.Split(',');
-            post.Tags = split.Select(o => o.Trim()).ToList();
+            if (post.TagsRaw != null)
+            {
+                var split = post.TagsRaw.Split(',');
+                post.Tags = split.Select(o => o.Trim()).ToList();
+            }
             _postRepository.Update(post);
             return RedirectToAction("Index");
         }

@@ -22,7 +22,6 @@ namespace nScanty.Models
             get { return CreatedAt.Day; }
         }
 
-        public string Url { get; set; }
         private string _title;
         public string Title
         {

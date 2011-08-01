@@ -23,15 +23,15 @@
         		<p class="date">@post.Month<b>@post.Day</b></p>
 
                 <h2 class="title">
-                    <a href="@post.Url">@post.Title</a>
+                    @Html.ActionLink(@post.Title, "Post", new { slug = @post.Slug }, null)
                 </h2>
         		<p class="meta">
                     <small>
                         @if (post.Tags != null)
                         {
                             foreach (var tag in post.Tags) {
-                                <a href="/tags/@tag">@tag</a>
-                                
+                                @Html.ActionLink(tag, "Tag", new { tag = tag });
+                                                                                   
                     			@*<% if Blog.disqus_shortname %>
                                 this was being read out of main.rb OpenStruct, would be web.config for this app
                     				| <a href="<%= post.url %>#disqus_thread">comments</a>
@@ -44,9 +44,10 @@
                     @{
                         var summary = @post.Summary;
                         var sumHtml = summary.Replace("\r\n", "<br />");
+                        sumHtml += "  ";
                         @Html.Raw(sumHtml)
                         if (post.More) {
-                            <a href="@post.Url">Continue reading..</a>
+                            @Html.ActionLink("Continue reading..", "Post", new { slug = @post.Slug }, null)
                         }
                     }
         		</div>
