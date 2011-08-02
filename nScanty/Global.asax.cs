@@ -30,7 +30,7 @@ namespace nScanty
 
             routes.MapRoute(
                 "Post",
-                "{year}/{month}/{slug}",
+                "Home/{year}/{month}/{slug}",
                 new {controller = "Home", action = "Post" });
 
             routes.MapRoute(
@@ -48,7 +48,7 @@ namespace nScanty
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
             RegisterUser();
-            RouteDebug.RouteDebugger.RewriteRoutesForTesting(RouteTable.Routes);
+            //RouteDebug.RouteDebugger.RewriteRoutesForTesting(RouteTable.Routes);
         }
 
         private static void RegisterUser()

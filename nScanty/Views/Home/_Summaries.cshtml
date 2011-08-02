@@ -6,10 +6,7 @@
 		<p class="date">@post.Month<b>@post.Day</b></p>
 
         <h2 class="title">
-            @{
-                var href = @post.Url;
-                <a href="@href">@post.Title</a>
-            }
+            @Html.ActionLink(@post.Title, @post.Url)
         </h2>
 
         @Html.Partial("_Tags", post.Tags)
@@ -22,7 +19,7 @@
                 @Html.Raw(sumHtml)
                 if (post.More)
                 {
-                    <a href="@post.Url">Continue Reading..</a>
+                    @Html.ActionLink("Continue Reading..", @post.Url)
                 }
             }
 		</div>
