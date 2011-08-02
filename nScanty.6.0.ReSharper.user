@@ -9,58 +9,59 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/f:Web.config" caret="533" fromTop="12" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Data/f:PostRepository.cs" caret="778" fromTop="24" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Models/f:Tagged.cs" caret="0" fromTop="0" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Models/f:AccountModels.cs" caret="0" fromTop="0" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Data/f:UserRepository.cs" caret="1156" fromTop="22" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:App_Data/f:MongoMembershipProvider.cs" caret="0" fromTop="0" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Content/f:main.css" caret="4605" fromTop="44" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Models/f:Post.cs" caret="1923" fromTop="43" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Feed/f:RssHelper.cs" caret="230" fromTop="10" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Feed/f:RssActionResult.cs" caret="629" fromTop="21" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/f:Global.asax.cs" caret="1161" fromTop="26" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Controllers/f:HomeController.cs" caret="1625" fromTop="1" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Summaries.cshtml" caret="345" fromTop="13" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="0" fromTop="0" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Archive.cshtml" caret="281" fromTop="9" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/f:Global.asax.cs" caret="710" fromTop="14" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Controllers/f:HomeController.cs" caret="3525" fromTop="32" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Feed/f:RssHelper.cs" caret="461" fromTop="15" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/f:Web.config" caret="1030" fromTop="21" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Models/f:Post.cs" caret="984" fromTop="28" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Data/f:UserRepository.cs" caret="1156" fromTop="22" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Header.cshtml" caret="0" fromTop="0" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_PostsTagged.cshtml" caret="136" fromTop="4" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_SinglePost.cshtml" caret="0" fromTop="0" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Summaries.cshtml" caret="690" fromTop="26" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="510" fromTop="15" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Archive.cshtml" caret="345" fromTop="13" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:Archive.cshtml" caret="28" fromTop="1" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Tags.cshtml" caret="7" fromTop="0" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_PostsTagged.cshtml" caret="87" fromTop="3" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:Edit.cshtml" caret="368" fromTop="14" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_SinglePost.cshtml" caret="1089" fromTop="30" />
     </RecentFiles>
     <RecentEdits>
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Controllers/f:HomeController.cs" caret="1259" fromTop="27" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Controllers/f:HomeController.cs" caret="2464" fromTop="36" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Controllers/f:HomeController.cs" caret="2288" fromTop="24" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_PostsTagged.cshtml" caret="130" fromTop="5" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_SinglePost.cshtml" caret="667" fromTop="37" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_SinglePost.cshtml" caret="1078" fromTop="1" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="575" fromTop="24" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="575" fromTop="32" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="575" fromTop="36" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_PostsTagged.cshtml" caret="88" fromTop="3" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="572" fromTop="18" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Summaries.cshtml" caret="26" fromTop="0" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Tags.cshtml" caret="7" fromTop="0" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_SinglePost.cshtml" caret="432" fromTop="17" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_SinglePost.cshtml" caret="645" fromTop="24" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Summaries.cshtml" caret="322" fromTop="12" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Summaries.cshtml" caret="741" fromTop="25" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Summaries.cshtml" caret="681" fromTop="25" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_SinglePost.cshtml" caret="219" fromTop="8" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Feed/f:RssHelper.cs" caret="150" fromTop="5" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Feed/f:RssHelper.cs" caret="230" fromTop="10" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Feed/f:RssActionResult.cs" caret="94" fromTop="4" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Controllers/f:HomeController.cs" caret="2744" fromTop="35" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Controllers/f:HomeController.cs" caret="3561" fromTop="48" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Controllers/f:HomeController.cs" caret="3206" fromTop="48" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Controllers/f:HomeController.cs" caret="437" fromTop="17" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Controllers/f:HomeController.cs" caret="794" fromTop="18" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/f:Global.asax.cs" caret="724" fromTop="12" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/f:Global.asax.cs" caret="1161" fromTop="26" />
       <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:Archive.cshtml" caret="28" fromTop="1" />
-      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Archive.cshtml" caret="26" fromTop="0" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Models/f:Post.cs" caret="599" fromTop="17" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Models/f:Post.cs" caret="984" fromTop="28" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Summaries.cshtml" caret="637" fromTop="24" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/f:Global.asax.cs" caret="853" fromTop="20" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/f:Global.asax.cs" caret="1018" fromTop="26" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/f:Web.config" caret="968" fromTop="20" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Feed/f:RssHelper.cs" caret="297" fromTop="10" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Feed/f:RssHelper.cs" caret="460" fromTop="15" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Controllers/f:HomeController.cs" caret="3549" fromTop="32" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Archive.cshtml" caret="59" fromTop="2" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/f:Global.asax.cs" caret="1563" fromTop="40" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="733" fromTop="26" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Content.cshtml" caret="723" fromTop="24" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Archive.cshtml" caret="210" fromTop="8" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Archive.cshtml" caret="329" fromTop="12" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/f:Global.asax.cs" caret="929" fromTop="22" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Summaries.cshtml" caret="176" fromTop="7" />
+      <File id="8E84323F-3A52-4432-8C6D-992CC8288932/d:Views/d:Home/f:_Summaries.cshtml" caret="531" fromTop="19" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -157,6 +158,7 @@
       <Item value="Body" priority="54" />
       <Item value="Id" priority="188" />
       <Item value="Summary" priority="26" />
+      <Item value="Url" priority="54" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:ServiceStack.Redis.Generic.IRedisList`1">
       <Item value="Add`0" priority="0" />
@@ -228,6 +230,7 @@
       <Item value="Html" priority="125" />
       <Item value="using" priority="17" />
       <Item value="Model" priority="7" />
+      <Item value="post" priority="9" />
     </ItemStatistics>
     <ItemStatistics item="CSharpCodeCompletionContext">
       <Item value="Html" priority="513" />
@@ -236,8 +239,8 @@
       <Item value="div" priority="59" />
       <Item value="Home" priority="65" />
       <Item value="h2" priority="29" />
-      <Item value="var" priority="319" />
-      <Item value="new" priority="319" />
+      <Item value="var" priority="351" />
+      <Item value="new" priority="351" />
       <Item value="repo" priority="95" />
       <Item value="if" priority="159" />
       <Item value="null" priority="159" />
@@ -248,7 +251,7 @@
       <Item value="Tag" priority="32" />
       <Item value="RouteValueDictionary" priority="57" />
       <Item value="tag" priority="31" />
-      <Item value="post" priority="223" />
+      <Item value="post" priority="285" />
       <Item value="return" priority="127" />
       <Item value="View`0" priority="31" />
       <Item value="About.cshtml" priority="18" />
@@ -303,6 +306,9 @@
       <Item value="User`0" priority="30" />
       <Item value="Partial`0" priority="3" />
       <Item value="nScanty" priority="63" />
+      <Item value="Uri`0" priority="31" />
+      <Item value="Uri" priority="57" />
+      <Item value="decimal" priority="29" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.Mvc.HtmlHelper`1">
       <Item value="BeginForm`0" priority="53" />
@@ -313,12 +319,14 @@
     </ItemStatistics>
     <ItemStatistics item="HtmlCodeCompletionContext">
       <Item value="p" priority="13" />
-      <Item value="div" priority="21" />
-      <Item value="h2" priority="7" />
+      <Item value="div" priority="27" />
+      <Item value="h2" priority="13" />
       <Item value="id" priority="5" />
       <Item value="content" priority="5" />
       <Item value="a" priority="6" />
       <Item value="textarea" priority="5" />
+      <Item value="class" priority="5" />
+      <Item value="decimal" priority="9" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:nScanty.Data.UserRepository">
       <Item value="GetUser`0" priority="26" />
