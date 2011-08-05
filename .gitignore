@@ -1,0 +1,12 @@
+# ReSharper meta directory
+_ReSharper*
+
+# R# option files
+*.ReSharper.user
+
+# dotcover files
+*.dotcover
+
+# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
+bin
+obj
