@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Web.Security;
 using MongoDB.Bson;
 using MongoDB.Driver;
@@ -12,7 +13,7 @@ namespace nScanty.Data
 
         public UserRepository()
         {
-            const string connection = "mongodb://localhost/Users";
+	        string connection = ConfigurationManager.AppSettings["env"].Equals("local") ? "mongodb://localhost/Users" : ConnectionString.MongoLab;
             var database = MongoDatabase.Create(connection);
             _collection = database.GetCollection<User>("Users");
         }

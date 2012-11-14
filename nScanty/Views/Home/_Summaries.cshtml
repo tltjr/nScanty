@@ -9,7 +9,10 @@
             @Html.ActionLink(@post.Title, @post.Url)
         </h2>
 
-        @Html.Partial("_Tags", post.Tags)
+		@if (post.Tags != null) 
+		{
+			@Html.Partial("_Tags", @post.Tags)
+		}
 
 		<div class="entry">
             @{

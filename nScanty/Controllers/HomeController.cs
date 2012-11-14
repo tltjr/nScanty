@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.ServiceModel.Syndication;
-using System.Web;
 using System.Web.Mvc;
 using MongoDB.Bson;
 using nScanty.Data;
@@ -21,7 +19,7 @@ namespace nScanty.Controllers
         {
             ViewBag.Title = ConfigurationManager.AppSettings["title"];
             var posts = _postRepository.FindAll().ToList();
-            posts.Sort((x, y) => y.CreatedAt.CompareTo(x.CreatedAt));
+			posts.Sort((x, y) => y.CreatedAt.CompareTo(x.CreatedAt));
             return View(posts.Take(10));
         }
 

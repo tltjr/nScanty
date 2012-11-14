@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Configuration;
-using System.IO;
-using System.Text;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.Builders;
@@ -16,8 +13,7 @@ namespace nScanty.Data
 
         public PostRepository()
         {
-            //var connection = ConfigurationManager.AppSettings.Get("MONGOHQ_URL");
-            const string connection = "mongodb://localhost/Posts";
+	        string connection = ConfigurationManager.AppSettings["env"].Equals("local") ? "mongodb://localhost/Posts" : ConnectionString.MongoLab;
             var database = MongoDatabase.Create(connection);
             _collection = database.GetCollection<Post>("Posts");
         }
