@@ -143,7 +143,7 @@ public class MongoMembershipProvider : MembershipProvider
          if (u == null)
          {
               var repository = new UserRepository();
-              repository.CreateUser(username, password, email);
+              repository.CreateUser(username, password);
               status = MembershipCreateStatus.Success;
               return GetUser(username, false);
          }

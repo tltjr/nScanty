@@ -44,7 +44,6 @@ namespace nScanty
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
             RegisterUser();
@@ -57,8 +56,16 @@ namespace nScanty
             var username = ConfigurationManager.AppSettings["user"];
             var user = repo.GetUser(username);
             if (null != user) return;
-            var password = ConfigurationManager.AppSettings["password"];
-            repo.CreateUser(username, password, "");
+	        var hashedPassword = ConfigurationManager.AppSettings["hashedPassword"];
+	        if (!string.IsNullOrEmpty(hashedPassword))
+	        {
+		        repo.CreateUserWithHashedPassword(username, hashedPassword);
+	        }
+	        else
+	        {
+		        var password = ConfigurationManager.AppSettings["password"];
+		        repo.CreateUser(username, password);
+	        }
         }
     }
 }

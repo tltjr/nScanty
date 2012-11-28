@@ -18,12 +18,12 @@ namespace nScanty.Data
             _collection = database.GetCollection<User>("Users");
         }
 
-        public MembershipUser CreateUser(string username, string password, string email)
+        public MembershipUser CreateUser(string username, string password)
         {
             var user = new User
                            {
                                UserName = username,
-                               Email = email,
+                               Email = string.Empty,
                                Password = BCrypt.HashPassword(password, BCrypt.GenerateSalt()),
                                CreatedDate = DateTime.Now,
                                IsActivated = false,
@@ -35,6 +35,24 @@ namespace nScanty.Data
             _collection.Insert(user);
             return GetUser(username);
         }
+
+		public MembershipUser CreateUserWithHashedPassword(string username, string hashedPassword)
+		{
+            var user = new User
+                           {
+                               UserName = username,
+                               Email = string.Empty,
+                               Password = hashedPassword,
+                               CreatedDate = DateTime.Now,
+                               IsActivated = false,
+                               IsLockedOut = false,
+                               LastLockedOutDate = DateTime.Now,
+                               LastLoginDate = DateTime.Now
+                           };
+
+            _collection.Insert(user);
+            return GetUser(username);
+		}
 
         public string GetUserNameByEmail(string email)
         {
@@ -67,7 +85,10 @@ namespace nScanty.Data
         {
             var query = Query.EQ("UserName", username);
             var user = _collection.FindOne(query);
-            return null != user && BCrypt.CheckPassword(password, BCrypt.HashPassword(password, BCrypt.GenerateSalt()));
+	        if (user == null)
+		        return false;
+	        var passwordMatched = BCrypt.CheckPassword(password, user.Password);
+	        return passwordMatched;
         }
     }
 
