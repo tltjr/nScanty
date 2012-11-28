@@ -13,15 +13,14 @@ nScanty is designed to work with [MongoDb](http://www.mongodb.org/), but could e
 Getting Started
 -----------------
 
-After forking and cloning the project, look in the appSettings of web.config and change the title, author, etc.. to fit your needs. Don't forget to set a username and password, they will be required for all administrative functions.
+After forking and cloning the project, look in the appSettings of web.config and change the title, author, etc.. to fit your needs. Don't forget to set a username and password, they will be required for all administrative functions. If you would prefer not to enter a plain text password, there is file called HashedPasswordGenerator.cs in the root of the project which you can use to hash your password. Hashed passwords should be place in the "hashedPassword" portion of the web.config. If a hashed password is present, the password setting will be ignored. If no hash password exists, the password setting will be used.
 
 To run the application locally. There is a appSetting called "env", which, when given a value of "local", will attempt to use your local MongoDb instance. Instruction for installation can be found here: [http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/)
 
-The blog can also easily be used with AppHarbor and AppHarbor's MongoLab add-on. To use MongoLab, simply replace the local connection string with:  
-
-`var connection = ConfigurationManager.AppSettings.Get("MONGOLAB_URI");`
-
-and enable the add-on within AppHarbor. Upon deploy you'll be fully up and running.  
+nScanty's default configuration is designed to work seemlessly with AppHarbor.
+In fact, after modifying the appSettings above, and creating an AppHarbor
+application with the MongoLab add-on enabled, nScanty should work on AppHarbor
+without any further modification.
 
 Administration
 ----------------
