@@ -10,6 +10,8 @@ nScanty should be fully usable, but is not fully tested and therefore should sti
 
 nScanty is designed to work with [MongoDb](http://www.mongodb.org/) and [AppHarbor](https://appharbor.com/), but could easily be modified to work with other databases and/or hosting providers.
 
+For the super fast quick-start, see my blog post on [getting started](http://tltjr.github.com/2012/11/28/start-a-blog-on-appharbor-in-5-minutes/).
+
 Getting Started
 -----------------
 
