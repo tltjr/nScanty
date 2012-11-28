@@ -8,7 +8,7 @@ nScanty is an extremely lightweight ASP.net MVC 3 blogging platform, based on th
 
 nScanty should be fully usable, but is not fully tested and therefore should still be considered beta software at best.
 
-nScanty is designed to work with [MongoDb](http://www.mongodb.org/), but could easily be modified to work with other dbs.
+nScanty is designed to work with [MongoDb](http://www.mongodb.org/) and [AppHarbor](https://appharbor.com/), but could easily be modified to work with other databases and/or hosting providers.
 
 Getting Started
 -----------------
@@ -17,10 +17,10 @@ After forking and cloning the project, look in the appSettings of web.config and
 
 To run the application locally. There is a appSetting called "env", which, when given a value of "local", will attempt to use your local MongoDb instance. Instruction for installation can be found here: [http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/)
 
-nScanty's default configuration is designed to work seemlessly with AppHarbor.
+nScanty's default configuration is designed to work seamlessly with AppHarbor.
 In fact, after modifying the appSettings above, and creating an AppHarbor
 application with the MongoLab add-on enabled, nScanty should work on AppHarbor
-without any further modification.
+without any further modification. Note that the "env" appSetting should NOT be set to "local" when deploying to appHarbor (it can be empty or "prod" for example).
 
 Administration
 ----------------
