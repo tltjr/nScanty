@@ -31,6 +31,7 @@ namespace nScanty.Controllers
 
         [HttpPost]
         [ValidateInput(false)]
+        [Authorize]
         public ActionResult New(Post post)
         {
             post.CreatedAt = DateTime.Now;
@@ -57,6 +58,7 @@ namespace nScanty.Controllers
             return View(tagged);
         }
 
+        [Authorize]
         public ActionResult Edit(string objectId)
         {
             var post = _postRepository.FindOneById(objectId);
@@ -78,6 +80,7 @@ namespace nScanty.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize]
         public ActionResult Delete(string id)
         {
             _postRepository.DeleteById(new ObjectId(id));
